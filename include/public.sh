@@ -1,35 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@buzz3rs 
-buzz3rs
-/
-lamp
-forked from teddysun/lamp
-0
-0883
-Code
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-lamp/include/public.sh
-@buzz3rs
-buzz3rs Update public.sh
-Latest commit 76fa06e 13 minutes ago
- History
- 2 contributors
-@teddysun@buzz3rs
-1071 lines (992 sloc)  32.6 KB
-  
 # Copyright (C) 2013 - 2020 Teddysun <i@teddysun.com>
 # 
 # This file is part of the LAMP script.
@@ -1102,15 +1070,3 @@ pre_setting(){
     start_install
     lamp_install
 }
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
