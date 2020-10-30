@@ -1,5 +1,5 @@
 #!/usr/bin/expect
-# By IBOTCORP.com
+# By IBOTCORP.com | @Dakong
 
 set password [lindex $argv 0];
 set ::env(TERM) vt100
