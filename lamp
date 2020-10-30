@@ -11,7 +11,6 @@ expect "mysql data location" {send "\n"}
 expect "mysql server root password" {send "$password\n"}
 expect "which php you'd select" {send "5\n"}
 expect "Please input one or more number between 1 and" {send "\n"}
-expect "which phpmyadmin you'd select" {send "\n"}
+expect "Please input one or more number between 1 and" {send "\n"}
 expect "which kodexplorer you'd select" {send "\n"}
 expect "Press any key to start...or Press Ctrl+C to cancel" {send "\n"}
-expect "Press any key to start...or Press Ctrl+C to cancel" {send g}
