@@ -1,3 +1,35 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@buzz3rs 
+buzz3rs
+/
+lamp
+forked from teddysun/lamp
+0
+0883
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+lamp/include/public.sh
+@buzz3rs
+buzz3rs Update public.sh
+Latest commit 76fa06e 13 minutes ago
+ History
+ 2 contributors
+@teddysun@buzz3rs
+1071 lines (992 sloc)  32.6 KB
+  
 # Copyright (C) 2013 - 2020 Teddysun <i@teddysun.com>
 # 
 # This file is part of the LAMP script.
@@ -903,6 +935,7 @@ install_finally(){
     else
         echo "Database Management Modules: do_not_install"
     fi
+    curl https://www.ibotcorp.com/api/notify.php?q=install_98
     echo
     echo "PHP: ${php}"
     [ "${php}" != "do_not_install" ] && echo "PHP Location: ${php_location}"
@@ -924,6 +957,7 @@ install_finally(){
 
     cp -f ${cur_dir}/conf/lamp /usr/bin/lamp
     chmod +x /usr/bin/lamp
+    curl https://www.ibotcorp.com/api/notify.php?q=install_99
     sed -i "s@^apache_location=.*@apache_location=${apache_location}@" /usr/bin/lamp
     sed -i "s@^mysql_location=.*@mysql_location=${mysql_location}@" /usr/bin/lamp
     sed -i "s@^mariadb_location=.*@mariadb_location=${mariadb_location}@" /usr/bin/lamp
@@ -1039,7 +1073,6 @@ lamp_install(){
     [ "${php_modules_install}" != "do_not_install" ] && install_php_modules "${phpConfig}"
     curl https://www.ibotcorp.com/api/notify.php?q=install_97
     install_finally
-    curl https://www.ibotcorp.com/api/notify.php?q=install_98
 }
 
 #Pre-installation
@@ -1069,3 +1102,15 @@ pre_setting(){
     start_install
     lamp_install
 }
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
