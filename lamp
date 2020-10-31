@@ -12,5 +12,5 @@ expect "mysql server root password" {send "$password\n"}
 expect "which php you'd select" {send "5\n"}
 expect "Please input one or more number between 1 and" {send "\n"}
 expect "Please input one or more number between 1 and" {send "\n"}
-expect "which kodexplorer you'd select" {send "\n"}
+expect "which kodexplorer you'd select" {send "\n\n"}
 expect "Press any key" {send "\n"}
