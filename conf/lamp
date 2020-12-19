@@ -398,6 +398,7 @@ add_ssl_cert(){
 
     if [ ! -s /bin/certbot ]; then
         add-apt-repository -y ppa:certbot/certbot
+        apt-get update
         apt install -y python-certbot-apache
         ln -s /usr/bin/certbot /bin/
     fi
