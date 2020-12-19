@@ -397,8 +397,9 @@ add_ssl_cert(){
     fi
 
     if [ ! -s /bin/certbot ]; then
-        wget --no-check-certificate -qO /bin/certbot https://dl.eff.org/certbot-auto
-        chmod +x /bin/certbot
+        add-apt-repository -y ppa:certbot/certbot
+        apt install -y python-certbot-apache
+        ln -s /usr/bin/certbot /bin/
     fi
 
     if [ "${ssl_pick}" = "2" ]; then
